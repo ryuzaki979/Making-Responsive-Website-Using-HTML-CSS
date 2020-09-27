@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-wrapper {
+width: 100%;
+height: 100vh;
+background: white;
+position: relative;
+}
+
+.topNav {
+    width: 85%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topNav img {
+
+ width: 30px;
+}
+.topNav li {
+ list-style: none;
+ display: inline-block;
+ margin: 0 1rem;
+}
+.topNav a {
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+}
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+}
+.controllar {
+width: 500px;
+float: right;
+}
+
+.grid-left {
+    position: relative;
+    padding-left: 1rem;
+}
+.grid-left::before {
+    position: absolute;
+    content : '';
+    width: 5px;
+    height: 75%;
+    background-color: rgb(255, 0, 0);
+   left: -.3rem;
+}
+.grid-left .title {
+    font-size: 4rem;
+}
+.grid-left .sub-title {
+    font-size: 2rem;
+    margin: 1rem 0 0rem;
+}
+.grid-left .sub-title2 {
+    font-size: 1rem;
+    color: grey;
+}
+.grid-left p {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.grid-left .button {
+    
+    background-image: linear-gradient(to right,rgb(255, 60, 0),rgb(255, 72, 0));
+    padding: .5rem 1rem;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.arrow {
+    width: 30px;
+    display: none;
+}
+.grid-left a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: .75rem;
+}
+.button:hover .arrow {
+    display: block;
+}
+.button:hover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    height: auto;
+}
+
+.box {
+    background-image: linear-gradient(to right,rgb(255, 60, 0),rgb(255, 72, 0));
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(115px);
+    border-radius: 30px 0  0 30px ;
+    z-index: -1;
+}
+
+.background-text {
+    position: absolute;
+    top: 50%;
+    left:  80%;
+    transform: translate(-80%,-50%);
+    font-size: .7rem;
+    text-align: center;
+    color: white;
+}
+.background-text img {
+    width: 30px;
+}
+.footer img {
+    width: 30px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.footer img:nth-child(1) {
+    width: 15px;
+}
+.footer {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
